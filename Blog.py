@@ -1,15 +1,15 @@
-class Comentario:
-    texto = ""
-    data_criacao = ""
-
 class Usuario:
     email = ""
-    comentarios = [Comentario]
+    blogs = []
 
 class Blog:
     titulo =""
     data_criacao = ""
     dono = Usuario() 
+
+class Comentario:
+    texto = ""
+    data_criacao = ""
 
 class Nota:
     texto = ""
