@@ -1,6 +1,10 @@
+class Comentario:
+    texto = ""
+    data_criacao = ""
+
 class Usuario:
     email = ""
-    comentarios = []
+    comentarios = [Comentario]
 
 class Blog:
     titulo =""
@@ -10,13 +14,9 @@ class Blog:
 class Nota:
     texto = ""
     data_criacao = ""
-    comentarios_da_nota = []
-
-class Comentario:
-    texto = ""
-    data_criacao = ""
+    comentarios_da_nota = [Comentario]
 
 
 class Sistema:
-    usuarios = []
-    blogs = []
+    usuarios =[Usuario]
+    blogs = [Blog]
