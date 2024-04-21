@@ -1,9 +1,78 @@
-<mxfile host="app.diagrams.net" modified="2024-04-21T13:21:18.147Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" version="24.2.7" etag="0N44ZbbW8H97qomcMfmY" type="github">
+<mxfile host="app.diagrams.net" modified="2024-04-21T14:58:46.119Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="8D_JTg7Mt3ewdDH1HSh6" version="24.2.7" type="github">
   <diagram name="Página-1" id="JaDWteGdlnVTnCZ4GG9B">
-    <mxGraphModel>
+    <mxGraphModel dx="1877" dy="557" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="KnJz8-OQx3YxSXpcZRCz-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;dashed=1;" edge="1" parent="1" source="KnJz8-OQx3YxSXpcZRCz-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="155" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KnJz8-OQx3YxSXpcZRCz-1" value="Sistema" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="100" y="30" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KnJz8-OQx3YxSXpcZRCz-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;endArrow=none;endFill=0;dashed=1;" edge="1" parent="1" source="KnJz8-OQx3YxSXpcZRCz-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="405" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KnJz8-OQx3YxSXpcZRCz-2" value="Blog" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="350" y="30" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KnJz8-OQx3YxSXpcZRCz-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;dashed=1;" edge="1" parent="1" source="KnJz8-OQx3YxSXpcZRCz-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="595" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KnJz8-OQx3YxSXpcZRCz-3" value="Notas" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="540" y="30" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KnJz8-OQx3YxSXpcZRCz-4" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="150" y="160" width="10" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="KnJz8-OQx3YxSXpcZRCz-6" value="mostrarTextosNota(idBlog) :List&amp;lt;String&amp;gt;" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;startArrow=oval;startFill=1;" edge="1" parent="1">
+          <mxGeometry x="-1" y="-10" width="80" relative="1" as="geometry">
+            <mxPoint x="50" y="170" as="sourcePoint" />
+            <mxPoint x="150" y="170" as="targetPoint" />
+            <mxPoint x="-10" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KnJz8-OQx3YxSXpcZRCz-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=0;exitX=1;exitY=0;exitDx=0;exitDy=5;exitPerimeter=0;" edge="1" parent="1" source="KnJz8-OQx3YxSXpcZRCz-4" target="KnJz8-OQx3YxSXpcZRCz-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="160" y="190" />
+              <mxPoint x="180" y="190" />
+              <mxPoint x="180" y="210" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KnJz8-OQx3YxSXpcZRCz-8" value="blog = buscarBlogPorId(idBlog)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="KnJz8-OQx3YxSXpcZRCz-7">
+          <mxGeometry x="0.0588" y="4" relative="1" as="geometry">
+            <mxPoint x="56" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KnJz8-OQx3YxSXpcZRCz-9" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="400" y="220" width="10" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="KnJz8-OQx3YxSXpcZRCz-11" value="getTextoNotas()" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1" target="KnJz8-OQx3YxSXpcZRCz-9">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="160" y="240" as="sourcePoint" />
+            <mxPoint x="240" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KnJz8-OQx3YxSXpcZRCz-12" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="590" y="265" width="10" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="KnJz8-OQx3YxSXpcZRCz-13" value="getTextos()" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1" target="KnJz8-OQx3YxSXpcZRCz-12">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="410" y="289.5" as="sourcePoint" />
+            <mxPoint x="490" y="289.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KnJz8-OQx3YxSXpcZRCz-16" value="loop - Enquanto houver notas" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;width=100;height=30;" vertex="1" parent="1">
+          <mxGeometry x="370" y="250" width="260" height="160" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
