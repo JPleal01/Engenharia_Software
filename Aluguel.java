@@ -1,7 +1,7 @@
 
 public class Aluguel {
-  private Fita fita;
-  private int diasAlugada;
+  public Fita fita;
+  public int diasAlugada;
 
   public Aluguel(Fita fita, int diasAlugada) {
     this.fita = fita;

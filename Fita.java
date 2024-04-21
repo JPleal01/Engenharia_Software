@@ -1,19 +1,21 @@
-import java.util.Iterator;
+
 
 public class Fita {
   public static final int NORMAL = 0;
   public static final int LANCAMENTO = 1;
   public static final int INFANTIL = 2;
 
-  private String titulo;
-  private int codigoDePreco;
+  public String titulo;
+  public int codigoDePreco;
 
   public Fita(String titulo, int codigoDePreco) {
     this.titulo = titulo;
     this.codigoDePreco = codigoDePreco;
   }
 
-  public String getTitulo() {
+
+
+public String getTitulo() {
     return titulo;
   }
 
@@ -24,20 +26,9 @@ public class Fita {
   public void setCodigoDePreco(int codigoDePreco) {
     this.codigoDePreco = codigoDePreco;
   }
-
-  public String extrato(Cliente novoCliente) {
-    final String fimDeLinha = System.getProperty("line.separator");
-    double valorTotal = 0.0;
-    int pontosDeAlugadorFrequente = 0;
+  public double getValorCorrente(Aluguel cada, double valorCorrente){
     
-    String resultado = "Registro de Alugueis de " + novoCliente.getNome() + fimDeLinha;
-    
-    Iterator<Aluguel> alugueis = novoCliente.fitasAlugadas.iterator();
-    while(alugueis.hasNext()) {
-      double valorCorrente = 0.0;
-      Aluguel cada = alugueis.next();
-
-      switch(cada.getFita().getCodigoDePreco()) {
+    switch(cada.getFita().getCodigoDePreco()) {
       case Fita.NORMAL:
         valorCorrente += 2;
         if(cada.getDiasAlugada() > 2) {
@@ -52,22 +43,10 @@ public class Fita {
         if(cada.getDiasAlugada() > 3) {
           valorCorrente += (cada.getDiasAlugada() - 3) * 1.5;
         }
-        break;
       } // fim do switch
+    return valorCorrente;
 
-      pontosDeAlugadorFrequente++;
-      if(cada.getFita().getCodigoDePreco() == Fita.LANCAMENTO &&  
-         cada.getDiasAlugada() > 1) {
-           pontosDeAlugadorFrequente++;
-      }
-
-      resultado += cada.getFita().getTitulo() + ":" + valorCorrente + fimDeLinha;
-      valorTotal += valorCorrente;
-    } // fim do while
-    
-    resultado += "Valor total devido: " + valorTotal + fimDeLinha;
-    resultado += "Voce acumulou " + pontosDeAlugadorFrequente + " pontos" + fimDeLinha;
-    return resultado;
   }
-}
+
+  }
 
