@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-04-21T15:20:46.377Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="paJRmvsnA_LMdHbPzohY" version="24.2.7" type="github">
+<mxfile host="app.diagrams.net" modified="2024-04-21T15:22:52.114Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="YsaR248QFkly4mNUR_2a" version="24.2.7" type="github">
   <diagram name="Página-1" id="kRPLYJsi6rrupMbsf0CN">
-    <mxGraphModel dx="1932" dy="586" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1994" dy="619" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -42,7 +42,7 @@
           <mxGeometry x="520" y="60" width="100" height="480" as="geometry" />
         </mxCell>
         <mxCell id="twVeODWQmOb_BkFFTKhD-10" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="twVeODWQmOb_BkFFTKhD-7">
-          <mxGeometry x="45" y="150" width="10" height="170" as="geometry" />
+          <mxGeometry x="45" y="150" width="10" height="160" as="geometry" />
         </mxCell>
         <mxCell id="twVeODWQmOb_BkFFTKhD-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=0;exitX=1;exitY=0;exitDx=0;exitDy=5;exitPerimeter=0;" edge="1" parent="twVeODWQmOb_BkFFTKhD-7" source="twVeODWQmOb_BkFFTKhD-10" target="twVeODWQmOb_BkFFTKhD-10">
           <mxGeometry relative="1" as="geometry">
@@ -57,20 +57,16 @@
           <mxGeometry x="800" y="60" width="110" height="480" as="geometry" />
         </mxCell>
         <mxCell id="twVeODWQmOb_BkFFTKhD-13" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="twVeODWQmOb_BkFFTKhD-8">
-          <mxGeometry x="45" y="210" width="10" height="130" as="geometry" />
+          <mxGeometry x="50" y="208" width="10" height="102" as="geometry" />
         </mxCell>
-        <mxCell id="twVeODWQmOb_BkFFTKhD-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=0;exitX=1;exitY=0;exitDx=0;exitDy=5;exitPerimeter=0;" edge="1" parent="twVeODWQmOb_BkFFTKhD-8" source="twVeODWQmOb_BkFFTKhD-13" target="twVeODWQmOb_BkFFTKhD-19">
+        <mxCell id="twVeODWQmOb_BkFFTKhD-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=0;exitX=1;exitY=0;exitDx=0;exitDy=5;exitPerimeter=0;" edge="1" parent="twVeODWQmOb_BkFFTKhD-8" source="twVeODWQmOb_BkFFTKhD-13" target="twVeODWQmOb_BkFFTKhD-13">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="70" y="300" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="55" y="280" />
-              <mxPoint x="80" y="280" />
-              <mxPoint x="80" y="300" />
+              <mxPoint x="60" y="280" />
+              <mxPoint x="100" y="280" />
+              <mxPoint x="100" y="300" />
             </Array>
           </mxGeometry>
-        </mxCell>
-        <mxCell id="twVeODWQmOb_BkFFTKhD-19" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="twVeODWQmOb_BkFFTKhD-8">
-          <mxGeometry x="50" y="290" width="15" height="20" as="geometry" />
         </mxCell>
         <mxCell id="twVeODWQmOb_BkFFTKhD-12" value="nota = buscarNotaPorId(idNota)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="570" y="220" width="190" height="30" as="geometry" />
