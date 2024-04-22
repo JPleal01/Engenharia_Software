@@ -25,7 +25,10 @@ class Blog:
         nota= Nota(texto, data_criacao_nota)
     def inserir_nova_nota(self, nota: 'Nota'):
         self.notas.append[nota]
-    
+    def get_textos_notas(self):
+        for nota in self.notas:
+            texto_nota = Nota.get_texto()
+            return texto_nota
 
 class Comentario:
     def __init__(self, texto, data_criacao) -> None:
@@ -37,6 +40,8 @@ class Nota:
     def __init__ (self, texto, data_criacao):
         self.__texto= texto
         self.__data_criacao = data_criacao
+    def get_texto(self):
+        return self.__texto
     
     
     comentarios_da_nota = []
@@ -70,4 +75,8 @@ class Sistema:
     def criar_nota(self,texto,data_criacao,idblog):
         self.buscar_blog_por_id(idblog)
         Blog.criar_nota(texto, data_criacao)
+  
+    def buscar_texto_nota(self,idblog):
+        self.buscar_blog_por_id(idblog)
+        Blog.get_textos_notas()
     
