@@ -1,5 +1,5 @@
 # Engenharia_Software
-### Diagrama UML e Codigo em Java de um sistema basico de blog.
+### Diagrama UML e Codigo em Python de um sistema basico de blog.
 ***
 Considere os requisitos do sistema de blog descritos abaixo. Desenhe o diagrama de classes em alguma ferramenta de sua preferência (sugestão draw.io). No diagrama, desenhar as classes, atributos, relacionamentos, multiplicidade e navegabilidade. Nas classes, basta colocar os atributos. Não é necessário colocar métodos.
 
@@ -26,4 +26,11 @@ Somente o dono do blog pode remover conteúdos. Para remover um conteúdo ele pr
 ***
 
 
-### Correção de codigo segundo padrões GRASP- Expert. Codigo fornecido pelo professor
+### Diagramas em Sequencia(DeS) 
+
+**Dois códigos: Sistema de blog e Sistema de aluguel de filme**
+
+Na primeira etapa será feita com base no codigo em java do Sistema de Blog e do diagrama UML do mesmo.
+
+A segunda parte é feita em cima do codigo em Java fornecido pelo professor, onde serão feitar alterações ou criações de metodos de acordo a necessidade da atividade
+***
