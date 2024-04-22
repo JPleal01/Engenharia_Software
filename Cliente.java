@@ -17,6 +17,18 @@ public class Cliente {
   public void adicionaAluguel(Aluguel aluguel) {
     fitasAlugadas.add(aluguel);
   }
+  public String obterTituloFilmesAlugados(){
+    Iterator<Aluguel> alugueis = fitasAlugadas.iterator();
+    String titulos = "";
+    while (alugueis.hasNext()) {
+      Aluguel cada = alugueis.next();
+       String titulo = cada.getTitulo();
+       titulos = titulo + ",";
+      
+    }
+    return titulos;
+
+  }
 
   public String extrato() {
     final String fimDeLinha = System.getProperty("line.separator");

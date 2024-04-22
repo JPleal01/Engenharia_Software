@@ -15,5 +15,12 @@ public class Aluguel {
   public int getDiasAlugada() {
     return diasAlugada;
   }
+
+  public String getTitulo(){
+    fita = new Fita(getTitulo(), diasAlugada);
+    String titulo = fita.getTitulo();
+    return titulo;
+  }
+
 }
 
