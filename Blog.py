@@ -30,21 +30,38 @@ class Blog:
             texto_nota = Nota.get_texto()
             return texto_nota
 
+    def buscar_nota_por_id(self, idnota):
+        for nota in self.notas:
+            if nota.get_idnota == idnota:
+                return nota
+    def criar_novo_comentario(self, texto, data_criacao, autor,idnota):
+        nota = self.buscar_nota_por_id(idnota)
+
+
+
 class Comentario:
-    def __init__(self, texto, data_criacao) -> None:
+    def __init__(self, texto, data_criacao, autor) -> None:
         self.__texto = texto
         self.__data_criacao = data_criacao
+        self.__autor = autor
 
 class Nota:
 
-    def __init__ (self, texto, data_criacao):
+     
+    comentarios_da_nota = []
+
+    def __init__ (self, texto, data_criacao, idnota):
         self.__texto= texto
         self.__data_criacao = data_criacao
+        self.__idnota = idnota
+
     def get_texto(self):
         return self.__texto
-    
-    
-    comentarios_da_nota = []
+    def get_idnota(self):
+        return self.__idnota
+    def criar_novocomentario(self, texto, data_criacao, autor:'Usuario'):
+        comentario = Comentario(self.texto, self.data_criacao, self.autor)
+        self.inserir_novo_comentario(comentario)
 
     def inserir_novo_comentario(self, comentario:Comentario):
         self.comentarios_da_nota.append[comentario]
@@ -63,8 +80,8 @@ class Sistema:
     def inserir_novo_blog(self, blog:Blog):
         self.blogs.append[blog]
 
-    def criar_blog(self, titulo, data_criacao, dono):
-        blog = Blog(self.titulo, self.data_criacao, self.dono)
+    def criar_blog(self, titulo, data_criacao, dono, idblog):
+        blog = Blog(self.titulo, self.data_criacao, self.dono, self.idblog)
         self.inserir_novo_blog(blog= blog)
 
     def buscar_blog_por_id(self, idblog):
@@ -77,6 +94,11 @@ class Sistema:
         Blog.criar_nota(texto, data_criacao)
   
     def buscar_texto_nota(self,idblog):
-        self.buscar_blog_por_id(idblog)
-        Blog.get_textos_notas()
+        blog =self.buscar_blog_por_id(idblog)
+        blog.get_textos_notas()
+
+    def criar_comentario(self,texto,data_criacao,idblog, idnota, autor):
+        blog = self.buscar_blog_por_id(idblog)
+        blog.criar_novo_comentario()
+
     
